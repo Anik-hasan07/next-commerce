@@ -1,3 +1,4 @@
+import { ToastProvder } from "@/components/providers/toaster-provider";
 import Sidebar from "./_components/Sidebar"
 import { Navbar } from "./_components/navbar";
 
@@ -14,6 +15,7 @@ export default function DashboardLayout({children}:{
           
         </div>
         <main className="md:pl-56 pt-[80px] h-full">
+          <ToastProvder/>
           {children}
         </main>
      
